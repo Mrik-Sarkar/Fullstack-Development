@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color:aquamarine;
+    --secondary-color:rgb(47, 107, 87);
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 164px;
+}
+
+nav{
+    background-color:var(--primary-color);
+    height: 32px;
+    color: var(--secondary-color);
+    text-align: center;
+}
