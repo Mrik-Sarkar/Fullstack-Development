@@ -1,0 +1,63 @@
+body{
+    background-color: grey;
+    padding: 33px;
+}
+
+.card{
+    background-color: white;
+    height: 336px;
+    width: 240px;
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px 5px #2c2b2b;
+    
+}
+
+.image{
+    text-align: center;
+    padding: 10px;
+}
+
+img{
+    border-radius: 7px;
+}
+
+h1{
+    font-size: medium;
+}
+
+.content p{
+    font-size: small;
+    color: grey;
+}
+
+.content{
+    padding: 13px;
+    padding-top: 0px;
+}
+
+.capsule span{
+    border: 1px solid grey;
+    padding: 3px 6px;
+    border-radius: 15px;
+    margin: 3px;
+    font-size: smaller;
+    background-color: rgba(128, 128, 128, 0.358);
+}
+
+.capsule{
+    padding-top: 0px;
+    padding-left: 15px;
+}
+
+.button{
+    text-align: center;
+}
+
+.button button{
+    border-radius: 7px;
+    padding: 4px 10px;
+    border-radius: 14px;
+    border: 0px;
+    color: rgba(46, 30, 190, 0.985);
+    background-color: rgba(0, 85, 255, 0.458);
+}
