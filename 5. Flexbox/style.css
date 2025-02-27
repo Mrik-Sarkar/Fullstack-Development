@@ -1,0 +1,66 @@
+.container {
+    border: 2px solid blue;
+    height: 80vh;
+    display: flex;
+
+    /* FLEX-CONTAINER PROPERTY */
+
+    flex-direction: row;
+    /* flex-direction defines in which direction the flex elements would be displayed. It takes values like row, column or “reverse” too. */
+
+
+    flex-wrap: wrap;
+    /* By using this property we can make our elements responsive for different screen sizes.  */
+
+
+    flex-flow: row wrap;
+    /* You can use flex flow as a short to add both these properties. Eg: {flex-flow: row wrap;} */
+
+
+    justify-content: center;
+    /* This property is used to set the position of content or rather align content along the main axis. 
+    It can take other values too like “space-around” which distributes flex items equally spaced in the container. Other properties include flex-end, flex-start, space-between, etc. (These could be seen in vs code when the justify-content property is selected).*/
+
+
+    align-items: center;
+    /* Just like the justify-content property, align-items define the alignment of the flex container but along the cross-axis. */
+
+
+    align-content: center;
+    /* This property is very similar to align item but here rather than the flex items, the content present in the item is selected for the property.WE MAINLY USE ALIGN-CONTENT INSTEAD OF ALIGN-ITEMS WHEN THE ITEMS ARE PRESENT IN MULTIPLE LINE (BE IT ROW OR COLUMN) */
+
+
+
+
+
+
+
+
+}
+
+
+
+.item {
+    background-color: red;
+    height: 90px;
+    width: 120px;
+    border: 2px solid black;
+    margin: 4px;
+    padding: 4px;
+
+    /* FLEX-ITEMS PROPERTY */
+
+    flex-grow: 3;
+    /* Decides the relative size of flex items. By default, this property is zero and thus items have the same size. flex-grow:3; means the size of the flex item should be 3 times of the default size or addressed size of a normal flex-property. */
+
+
+    flex-shrink: 3;
+    /* We can also use flex-shrink to decrease size of an element when it overflows the screen. flex-shrink:3; means the items can be shrunk 1/3rd of the size of the flex property when it is needed.  */
+
+
+    
+
+
+
+}
+
