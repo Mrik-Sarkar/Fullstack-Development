@@ -1,0 +1,70 @@
+*{
+    color: white;
+    margin: 0;padding: 0;
+
+}
+
+
+
+header{
+    margin-top: 14px;
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    background-color: #22007C;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+nav button{
+    background-color: #22007C;
+    border: 2px solid white;
+    width: 140px;
+    padding: 7px;
+    border-radius: 22px;
+}
+
+
+/* MAIN  */
+
+.front img{
+    height: 65vh;
+    box-shadow: 5px 5px 15px 5px #3a3a3a;
+    
+}
+
+.front{
+    text-align: center;
+}
+
+body{
+    background-color: #4607f1;
+    
+}
+
+.para{
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.course{
+    display: flex;
+    gap: 30px;
+}
+
+.package{
+    height: 400px;
+    background-color: #140152;
+}

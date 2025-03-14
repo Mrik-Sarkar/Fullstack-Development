@@ -1,0 +1,57 @@
+.container {
+    border: 2px solid blue;
+    display: grid;
+
+    /* GRID CONTAINER PROPERTIES  */
+
+
+    /* In CSS, "grid template properties" refers to a set of properties like grid-template-columns, grid-template-rows, and grid-template-areas which collectively define the structure of a CSS grid layout, specifying the size and arrangement of its columns and rows within a container, essentially controlling how elements are positioned on the grid.  */
+    grid-template-columns: 120px 100px;
+    /* here through grid-template-colums I declared two columns, one of 120px and other of 100px */
+
+
+    grid-template-rows: 100px 100px 100px;
+    /* similarly like grid-template-column, here grid-template-row is used to declared 3 rows of the size of 100px.  */
+
+    row-gap: 30px;
+    column-gap: 10px;
+
+
+    justify-items: center;
+    align-items: center;
+    /* The justify-items & align-items property control the alignment of grid items . It is set on the grid container.justify-items property aligns grid items within their tracks (not the entire container)
+
+ */
+
+
+
+    justify-content: center;
+    align-content: center;
+    /* The justify-content and align-content property controls the alignment of grid columns along the main axis and cross axis respectively. It is set on the grid container. It does not apply to or control the alignment of grid items. justify-content property aligns columns within the container. */
+
+}
+
+.item {
+    border: 2px solid red;
+    height: 55px;
+    width: 55px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: red;
+
+    /* GRID ITEM PROPERTIES */
+
+
+
+}
+
+.item3 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    /* both grid-row & grid-column property are used to position a specific grid-cell based on the starting and ending grid-line of both row & column. (grid-row: 1/2;) means that item3's starting grid-row line will be 1 & ending row line will be 2 . That means item3 will be placed between grid-row line number 1 & 2. the same goes with grid-column property. */
+
+
+    align-self: self-start;
+    justify-self: end;
+    /* The justify-self property overrides justify-items on individual items. It is set on grid items and inherits the value of justify-items, by default. */
+}

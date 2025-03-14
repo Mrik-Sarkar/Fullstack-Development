@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* NAVBAR */
+
+header {
+    position: sticky;
+    top: 0px;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 164px;
+    cursor: pointer;
+}
+
+.right li span {
+    padding: 0px 5px;
+}
+
+/* MAIN  */
+
+.version {
+    margin-right: 261px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 29px;
+}
+
+
+
+.version .first {
+    font-size: 22px;
+}
+
+.version .second {
+    font-size: small;
+}
+
+
+
+.demo {
+    background-color: rgb(30, 29, 29);
+    color: white;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about h2 {
+    font-weight: bolder;
+    font-size: 45px;
+
+}
+
+
+.download {
+    display: grid;
+    grid-template-columns: 215px 215px 215px;
+    column-gap: 70px;
+    row-gap: 30px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.download a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(38, 187, 38, 0.836);
+    border-radius: 3px;
+
+}
+
+.download .item {
+    height: 200px;
+    width: 302px;
+    padding: 16px;
+    background-color:#2222220a;
+}
+
+.download h3,
+h4 {
+    padding-bottom: 10px;
+}
+
+.download h4 {
+    font-weight: lighter;
+    font-size: small;
+}
+
+@media  screen and (max-width:1145px) {
+    .download{
+        
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* FOOTER  */
+
+footer {
+    height: 30px;
+    text-align: center;
+    margin-top: 30px;
+}

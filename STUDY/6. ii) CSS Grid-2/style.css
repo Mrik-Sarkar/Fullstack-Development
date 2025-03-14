@@ -1,0 +1,39 @@
+.container{
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                        "side article article"
+                        "footer footer footer";
+}
+
+
+.item1{
+grid-area: nav;
+background-color: aquamarine;
+}
+
+
+.item2{
+    grid-area: side;
+    background-color: bisque;
+}
+
+
+.item3{
+    grid-area: article;
+    background-color: aqua;
+}
+
+
+.item4{
+    grid-area: footer;
+    background-color: rgba(227, 86, 21, 0.864);
+}
+
+
+.item{
+    height: 100px;
+}
+
+.item2 .item3{
+    height: 20vh;
+}

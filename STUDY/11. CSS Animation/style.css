@@ -1,0 +1,60 @@
+.container{
+    background-color: rgb(49, 147, 233);
+    height: 80vh;
+    width: 30vw;
+}
+
+.box{
+    height: 45px;
+    width: 34px;
+    background-color: #220432;
+
+    /* ANIMATION  */
+
+    /* animation-name: myAnimation;
+
+
+    animation-duration: 3s;
+    /* for how long the animation will perform */
+
+
+    /* animation-iteration-count: 3; */
+    /* for how many times the animation will perform */
+
+
+    /* animation-timing-function: ease-in;
+
+
+    animation-direction: alternate-reverse; */ */
+
+    /* animation shorthand */
+
+    animation: myAnimation 3s ease-in 0 infinity alternate-reverse;
+}
+
+@keyframes myAnimation{
+    from{
+
+    }
+    to{
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes ani2{
+    0%{
+        transform: rotate(100deg);
+    }
+    20%{
+        transform: rotate(150deg);
+    }
+    40%{
+        transform: rotate(200deg);
+    }
+    60%{
+        transform: rotate(300deg);
+    }
+    80%{
+        transform: rotate(310deg);
+    }
+}

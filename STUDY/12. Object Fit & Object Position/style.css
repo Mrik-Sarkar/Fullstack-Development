@@ -1,0 +1,14 @@
+.container{
+    height: 635px;
+    width: 688px;
+    border: 2px solid black;
+    background-image:url(//free-3dtextureshd.com/wp-content/uploads/2024/04/12.jpg.webp);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+img{
+    height: 488px;width: 355px;
+    object-fit: cover;
+    object-position:top right;
+}

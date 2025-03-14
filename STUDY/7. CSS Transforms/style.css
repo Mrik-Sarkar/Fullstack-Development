@@ -1,0 +1,72 @@
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: bisque;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* here I used flexbox on .box to make the text written in .box center  */
+
+
+    /* TRANSFORM ROTATE() */
+
+    /* transform: rotate(40deg); */
+    /* here rotate(40deg) means the property will rotate 40 degree of it's original position.  */
+
+
+    /* transform: rotate(0.25turn); */
+    /* 360 degree= 1 turn , so here used 0.25turn means the box will rotate 90 degree */
+
+
+    /* transform: rotateX(40deg); */
+    /* rotateX(40deg) means the property will rotate 40 degree around X axis. Similarly,we can use rotateY & rotateZ to make the property rotate around the Y axis & Z axis respectively. */
+
+
+
+    /* TRANSFORM SCALE() */
+
+    transform: scale(1.6);
+    /* scale(1.6) means the property will get bigger 1.6 times.  */
+
+
+    /* transform: scaleX(.5); */
+    /* scaleX will help make the property get bigger on only X axis. Similarly, we can use scaleY & scaleZ to make the property bigger on Y axis & Z axis respectively.  */
+
+
+    transform: scale3d(1, 1, 1);
+
+
+    /* TRANSFORM SKEW() */
+
+    transform: skew(5deg);
+    /* skew(5deg) means the property is tilted 5 degree */
+
+
+    transform: skewX(5deg);
+    /* skewX(5deg) means the property is tilted 5 degree on X-axis. Similarly, skewY makes the property tilted on Y-axis.NOTE: THERE IS NO skewZ PROPERTY IN CSS  */
+
+
+    /* TRANSFORM TARNSLATE() */
+
+    transform: translate(34%);
+    /* here translate(34%) means the property will move 34% of the width of the property.  */
+
+
+    transform: translateX(100%);
+    /* translateX(100%) means the property will move 100% of the width on X-axis. Similarly, translateY & translateZ can be used to move the property on Y-axis & Z-axis respectively.  */
+
+
+    /* TRANSFORM MULTIPLE PROPERTY SHORTHAND */
+
+    transform: translateX(34%) translateY(100%) scale(1.5) ;
+    
+}
+
+
+.container {
+    height: 80vh;
+    width: 100vw;
+    border: 2px solid red;
+}
