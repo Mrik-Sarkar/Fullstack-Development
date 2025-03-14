@@ -1,0 +1,187 @@
+/* @font-face {
+    font-family: "martel sans";
+    src: url("Assets/font/MartelSans-SemiBold.woff") format('woff');
+  } */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@700&display=swap');
+  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "martel sans";
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(Assets/Images/bgimage.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 95vh;
+    position: relative;
+}
+
+.main .box{
+    height: 95vh;width: 100%;
+    background-color: black;
+    opacity: .6;
+    position: absolute;
+    top:0;
+    
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    height: 62px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+nav img{
+    width: 136px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+   
+}
+
+.translate{
+    padding: 5px 36px;
+    background-color: rgba(22,22,22,0.7);
+    color: white;
+}
+
+.front{
+    height: calc(100%-62px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 23px;
+    
+}
+
+.front .line1{
+   
+    font-size: 56px;
+    font-weight: bolder;
+    text-align: center;
+}
+.front .line2{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.front .line3{
+    font-weight: 400;
+    font-size:16px ;
+    text-align: center;
+}
+
+.separate{
+   height: 1px;
+   width: 120%;
+   border: 2px solid red;
+   background: red;
+   
+}
+
+button{
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.signin{
+    background-color: red;
+    color: white;
+}
+
+.start{
+    background-color: red;
+    color: white;
+    padding: 6px 24px;
+    font-size: 20px;
+}
+
+.email input{
+    padding: 10px 36px;
+    padding-left: 15px;
+    padding-right: 90px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgba(22,22,22,0.7);
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    
+}
+
+.email{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.trend{
+    
+    /* flex-direction: column; */
+    color:white ;
+    padding: 50px;
+    /* width: 80vw; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.trend span{
+    font-size: larger;
+    font-weight: bolder;
+    padding-left: 100px;
+}
+
+.shows ul{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 30px;
+    padding: 50px;
+    
+}
+
+.shows ul li{
+    list-style: none;
+    /* background-color: aquamarine; */
+    
+    
+    
+}
+.shows img{
+    height: 295px;
+    width: 225px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.shows ul li:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
