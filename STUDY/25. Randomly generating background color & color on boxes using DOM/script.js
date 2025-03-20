@@ -26,7 +26,7 @@ for (let index = 0; index < document.getElementsByClassName("box").length; index
         element.style.color="blueviolet";
     }
     else {
-        element.style.colorolor="brown";
+        element.style.color="brown";
     }
     
 }
