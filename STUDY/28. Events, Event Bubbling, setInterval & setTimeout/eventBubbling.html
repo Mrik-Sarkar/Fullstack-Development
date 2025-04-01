@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container,.asia {
+            background-color: rgb(18, 126, 220);
+            margin: 14px;
+            padding: 14px;
+        }
+
+        .childContainer,.india {
+            background-color: blue;
+            margin: 14px;
+            padding: 14px;
+        }
+
+        .child,.westBengal {
+            background-color: aquamarine;
+            margin: 14px;
+            padding: 14px;
+        }
+
+        .msd{
+            background-color: bisque;
+            margin: 14px;
+            padding: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">hey I am a child</div>
+        </section>
+    </div>
+
+    <div class="asia">
+        <div class="india">
+            <div class="westBengal">
+                <div class="msd">Murshidabad is here</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementsByClassName("container")[0].addEventListener("click", () => {
+            alert("Container was clicked")
+        })
+        document.getElementsByClassName("childContainer")[0].addEventListener("click", () => {
+            alert("childContainer was clicked")
+        })
+        document.getElementsByClassName("child")[0].addEventListener("click", () => {
+            alert("child was clicked")
+        })
+
+        //above if you click on child class , It will create event bubbling(above all the event listeners will work). The reason is -  .container>.childContainer>.child  , So if the child is clicked , automatically indirectly childContainer & container will be clicked as the child exists inside both of them.
+
+        //TO AVOID EVENT BUBBLING we use event.stopPropagation() . An example is given below-
+
+        document.querySelector(".asia").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("This is Asia , World's biggest continent")
+        })
+        document.querySelector(".india").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("This is India , World's most diverse country")
+        })
+        document.querySelector(".westBengal").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("This is West Bengal , said to be the state of art")
+        })
+        document.querySelector(".msd").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("This is Murshidabad , The historical city")
+        })
+        
+    </script>
+</body>
+
+</html>
